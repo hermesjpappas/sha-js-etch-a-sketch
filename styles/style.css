@@ -44,7 +44,7 @@ h1 {
     border: solid #333333 1px;
 }
 
-.grid-item:hover {
+.hovered{
     background-color: #f5f5f5;
     border-color: #f5f5f5;
 }
