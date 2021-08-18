@@ -45,3 +45,28 @@ h1 {
     background-color: #f5f5f5;
     border-color: #f5f5f5;
 }
+
+button {
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    height: 3em;
+    width: 6em;
+    font-family: 'Monoid Normal';
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #f5f5f5;
+    color: #222222;
+    border:  solid #333333 3px;
+    border-radius: 0.5em;
+}
+
+button:hover {
+    background-color: #777777;
+    color: #f5f5f5;
+}
+
+button:active {
+    background-color: black;
+    color: white;
+}
