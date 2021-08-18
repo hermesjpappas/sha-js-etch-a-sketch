@@ -4,10 +4,16 @@ const container = document.querySelector("#container");
 
 //use this to only draw when the mouse click is held down
 let mouseDown = false;
-//the preventDefault() function is to avoid drag functionality
-document.body.onmousedown = () => {event.preventDefault(); mouseDown = true;}
-document.body.onmouseup = () => mouseDown = false;
 
+//the preventDefault() function is to avoid drag functionality
+document.body.addEventListener('mousedown', (e) => { 
+    e.preventDefault();
+    mouseDown = true;
+});
+
+document.body.addEventListener('mouseup', (e) => { 
+    mouseDown = false;
+});
 
 
 //changes the pixel color when hovered
