@@ -29,6 +29,7 @@ h1 {
     top: 50%;
 
     margin: -400px 0 0 -400px;
+    padding: 0;
     /* if of unknown width and height, replace margins with this */
     /* transform: translate(-50%, -50%); */
 
