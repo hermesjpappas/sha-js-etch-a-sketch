@@ -1,6 +1,8 @@
 let gridSize = 16;
 
 const container = document.querySelector("#container");
+container.style.gridTemplateRows = `repeat(${gridSize}, auto)`;
+container.style.gridTemplateColumns = `repeat(${gridSize}, auto)`;
 
 for(let i=0; i<gridSize**2; i++) {
     const gridItem = document.createElement("div");
