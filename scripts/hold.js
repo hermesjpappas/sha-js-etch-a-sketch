@@ -2,6 +2,13 @@ let gridSize = 16;
 
 const container = document.querySelector("#container");
 
+//use this to only draw when the mouse click is held down
+let mouseDown = false;
+//the preventDefault() function is to avoid drag functionality
+document.body.onmousedown = () => {event.preventDefault(); mouseDown = true;}
+
+
+
 //changes the pixel color when hovered
 function hovered(item) {
     item.classList.add("hovered");
@@ -23,7 +30,7 @@ function createGrid(sideSize) {
     const gridItems = document.querySelectorAll('.grid-item');
 
     gridItems.forEach(gridItem => {
-        gridItem.addEventListener('mouseover', (e) => hovered(gridItem));
+        gridItem.addEventListener('mouseover', event => hovered(gridItem));
     });
 }
 
@@ -31,7 +38,7 @@ function createGrid(sideSize) {
 createGrid(gridSize);
 
 const reset = document.querySelector('#reset');
-reset.addEventListener('click', (e) => createGrid(gridSize));
+reset.addEventListener('click', event => createGrid(gridSize));
 
 
 function resizeGrid() {
