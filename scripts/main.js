@@ -14,8 +14,7 @@ function createGrid(sideSize) {
     }
 }
 
-//seems to function well up to 44 side size
-createGrid(gridSize);
+createGrid(64);
 
 function hovered(item) {
     item.classList.add("hovered");
