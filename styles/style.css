@@ -14,21 +14,21 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
 }
 
 #container {
-    width: 700px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
     border: solid #f5f5f5 3px;
     
     position: absolute;
     left: 50%;
     top: 50%;
 
-    margin: -350px 0 0 -350px;
+    margin: -400px 0 0 -400px;
     /* if of unknown width and height, replace margins with this */
     /* transform: translate(-50%, -50%); */
 
