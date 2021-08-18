@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Monoid Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monoid Normal'), url('Monoid.woff') format('woff');
+}
+
+body {
+    background-color: #222222;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-family: 'Monoid Normal';
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
