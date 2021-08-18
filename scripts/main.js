@@ -3,6 +3,7 @@ let gridSize = 16;
 const container = document.querySelector("#container");
 
 function createGrid(sideSize) {
+    container.innerHTML = "";
     container.style.gridTemplateRows = `repeat(${sideSize}, auto)`;
     container.style.gridTemplateColumns = `repeat(${sideSize}, auto)`;
 
@@ -13,6 +14,7 @@ function createGrid(sideSize) {
     }
 }
 
+//seems to function well up to 44 side size
 createGrid(gridSize);
 
 function hovered(item) {
