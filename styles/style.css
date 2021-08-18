@@ -39,8 +39,12 @@ h1 {
     /* transform: translate(-50%, -50%); */
 }
 
-#container > div {
-    background: gold;
+.grid-item{
     padding: 0.5em;
-    color: black;
+    border: solid #333333 1px;
+}
+
+.grid-item:hover {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
 }
