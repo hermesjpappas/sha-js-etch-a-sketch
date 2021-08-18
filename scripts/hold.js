@@ -21,6 +21,7 @@ function hovered(item) {
     if(mouseDown) item.classList.add("hovered");
 }
 
+//changes the pixel color if clicked
 function clicked(item) {
     item.classList.add("hovered");
 }
