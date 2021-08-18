@@ -6,12 +6,13 @@ const container = document.querySelector("#container");
 let mouseDown = false;
 //the preventDefault() function is to avoid drag functionality
 document.body.onmousedown = () => {event.preventDefault(); mouseDown = true;}
+document.body.onmouseup = () => mouseDown = false;
 
 
 
 //changes the pixel color when hovered
 function hovered(item) {
-    item.classList.add("hovered");
+    if(mouseDown) item.classList.add("hovered");
 }
 
 //resets the container HTML and then creates a fresh grid
