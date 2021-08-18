@@ -42,7 +42,11 @@ function resizeGrid() {
         if(size >= 16 && size <= 80) {
             gridSize = size;
             createGrid(size);
-            return;
+            validInput = true;
+        }
+        else if(size === null || size === "") {
+            createGrid(gridSize);
+            validInput = true;
         }
     }
 }
