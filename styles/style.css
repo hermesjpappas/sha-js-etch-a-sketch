@@ -47,9 +47,6 @@ h1 {
 }
 
 button {
-    position: absolute;
-    left: 2em;
-    bottom: 2em;
     height: 3em;
     width: 6em;
     font-family: 'Monoid Normal';
@@ -69,4 +66,16 @@ button:hover {
 button:active {
     background-color: black;
     color: white;
+}
+
+#reset {
+    position: absolute;
+    left: 2em;
+    bottom: 6em;
+}
+
+#resize {
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
 }

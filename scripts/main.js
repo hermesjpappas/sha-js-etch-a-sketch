@@ -30,9 +30,5 @@ function createGrid(sideSize) {
 //create the grid for the first time
 createGrid(gridSize);
 
-
-
-
-
 const reset = document.querySelector('#reset');
 reset.addEventListener('click', event => createGrid(gridSize));
