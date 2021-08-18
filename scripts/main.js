@@ -28,7 +28,7 @@ function createGrid(sideSize) {
 }
 
 //create the grid for the first time
-createGrid(16);
+createGrid(gridSize);
 
 const reset = document.querySelector('#reset');
 reset.addEventListener('click', event => createGrid(gridSize));
@@ -40,6 +40,7 @@ function resizeGrid() {
     while(!validInput) {
         let size = prompt("How many squares on each side? (16-80)");
         if(size >= 16 && size <= 80) {
+            gridSize = size;
             createGrid(size);
             return;
         }
