@@ -1,14 +1,19 @@
 let gridSize = 16;
 
 const container = document.querySelector("#container");
-container.style.gridTemplateRows = `repeat(${gridSize}, auto)`;
-container.style.gridTemplateColumns = `repeat(${gridSize}, auto)`;
 
-for(let i=0; i<gridSize**2; i++) {
-    const gridItem = document.createElement("div");
-    gridItem.className = "grid-item";
-    container.appendChild(gridItem)
+function createGrid(sideSize) {
+    container.style.gridTemplateRows = `repeat(${sideSize}, auto)`;
+    container.style.gridTemplateColumns = `repeat(${sideSize}, auto)`;
+
+    for(let i=0; i<sideSize**2; i++) {
+        const gridItem = document.createElement("div");
+        gridItem.className = "grid-item";
+        container.appendChild(gridItem)
+    }
 }
+
+createGrid(gridSize);
 
 function hovered(item) {
     item.classList.add("hovered");
