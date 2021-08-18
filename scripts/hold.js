@@ -21,6 +21,10 @@ function hovered(item) {
     if(mouseDown) item.classList.add("hovered");
 }
 
+function clicked(item) {
+    item.classList.add("hovered");
+}
+
 //resets the container HTML and then creates a fresh grid
 function createGrid(sideSize) {
     container.innerHTML = "";
@@ -37,7 +41,11 @@ function createGrid(sideSize) {
     const gridItems = document.querySelectorAll('.grid-item');
 
     gridItems.forEach(gridItem => {
-        gridItem.addEventListener('mouseover', event => hovered(gridItem));
+        gridItem.addEventListener('mouseover', (e) => hovered(gridItem));
+    });
+
+    gridItems.forEach(gridItem => {
+        gridItem.addEventListener('click', (e) => clicked(gridItem));
     });
 }
 
